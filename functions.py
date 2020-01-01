@@ -11,20 +11,15 @@ import GUI
 act = False
 alpha = 0
 
-
-# functions
-def donothing():
-    print('It works.')
-
-
+# clock hands movement
 def lines_move(tk, canvas1, line1, line2, line3):
     global alpha
     x2 = 100 * sin(math.radians(alpha))
     y2 = 100 * cos(math.radians(alpha))
     x4 = 100 * sin(math.radians(alpha / 60))
     y4 = 100 * cos(math.radians(alpha / 60))
-    x6 = 100 * sin(math.radians(alpha / 3600))
-    y6 = 100 * cos(math.radians(alpha / 3600))
+    x6 = 80 * sin(math.radians(alpha / 3600))
+    y6 = 80 * cos(math.radians(alpha / 3600))
     canvas1.coords(line1, 150, 200, (150 + x2), (200 - y2))
     canvas1.coords(line2, 150, 200, (150 + x4), (200 - y4))
     canvas1.coords(line3, 150, 200, (150 + x6), (200 - y6))
