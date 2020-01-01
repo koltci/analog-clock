@@ -24,7 +24,5 @@ l_h = c.create_line(150, 200, 150, 80, width=3)
 oval = c.create_oval(50, 100, 250, 300)
 
 def run_app():
-    # window.update_idletasks()
-    # window.update()
     mainloop()
 
