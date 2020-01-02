@@ -11,7 +11,7 @@ import GUI
 act = False
 alpha = 0
 
-# clock hands movement
+
 def lines_move(tk, canvas1, line1, line2, line3):
     global alpha
     x2 = 100 * sin(math.radians(alpha))
@@ -43,3 +43,9 @@ def time_start(tkint, canv, l1, l2, l3):
 def time_stop():
     global act
     act = False
+
+
+def switch_frames(frame1, frame2):
+    frame1.place_forget()
+    frame2.place(x=0, y=0)
+
