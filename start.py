@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import GUI
 
 # starting the app
